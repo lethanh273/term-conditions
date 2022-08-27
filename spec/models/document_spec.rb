@@ -3,6 +3,8 @@ require 'rails_helper'
 RSpec.describe Document, type: :model do
   context 'parse data' do
     before do
+      Clause.destroy_all
+      Section.destroy_all
       Clause.parse_data([
         { "id": 1, "text": "The quick brown fox" },
         { "id": 2, "text": "jumps over the lazy dog" },
