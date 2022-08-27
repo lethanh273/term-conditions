@@ -1,7 +1,7 @@
 development: &development
   adapter: postgresql
   encoding: unicode
-  database: iubenda
+  database: term_condition
   pool: 5
   host: localhost
   username: postgres
@@ -15,5 +15,5 @@ assets:
 # Do not set this db to the same as development or production.
 test:
   <<: *development
-  database: iubenda_test
+  database: term_condition_test
 
